@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  max-width: 100%;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.header{
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.flex a:hover{
+  outline: 2px solid #e21;
+}
+
+.flex a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem 2rem;
+  color: black;
+  border-radius: 4px;
+}
+
+.grid{
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-vantagens{
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bike img{
+  height: 100%;
+  object-fit: cover;
+}
+
+.descricao{
+  background-color: white;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  text-align: right;
+  padding: 65px 40px;
+  position: relative;
+}
+
+.descricao h1{
+  font-size: 2rem;
+}
+
+.descricao::before{
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.vantagens{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #c6c6c6;
+  text-align: right;
+  align-self: center;
+  padding: 40px;
+  background-image: url(img/onda.svg)
+}
+
+.comprar{
+  color: white;
+  background-color: #ee2211;
+  border-radius: 4px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+
+.comprar:hover{
+  background-color: #900;
+}
+
+.informacoes{
+  background-color: white;
+  padding: 40px;
+}
+
+.itens{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.itens:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.itens:hover{
+  border-left: 4px solid #e21;
+}
+
+.itens p {
+  grid-column: 2;
+}
+
+.rodape{
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.informacoes span{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .grid-vantagens{
+    grid-template-columns: 1fr;
+  }
+
+  .vantagens{
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px){
+  body{
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .header{
+    gap: 30px;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .descricao::before{
+    display: none;
+  }
+  .descricao{
+    text-align: center;
+    justify-items: center;
+  }
+  
+  .vantagens{
+    font-size: 3rem;
+  }
+
+}
+
+p{
+  font-size: 1.25rem;
+  margin: 0px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1{
+  margin: 0px;
+}

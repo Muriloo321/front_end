@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+.flex{
+  display: flex;
+  gap: 20px;
+}
+
+.grid{
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.descricao{
+  background-color: white;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  text-align: right;
+  padding: 65px 40px;
+  position: relative;
+}
+
+.linha{
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.vantagens{
+  font-size: 64px;
+  font-weight: bold;
+  color: #c6c6c6;
+  text-align: right;
+  align-self: center;
+  padding: 40px;
+}
+
+.comprar{
+  color: white;
+  background-color: #ee2211;
+  border-radius: 4px;
+}
+
+.informacoes{
+  background-color: white;
+  padding: 40px;
+}
+
+.itens{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.itens:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.itens p {
+  grid-column: 2;
+}
+
+.rodape{
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.informacoes span{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p{
+  font-size: 20px;
+  margin: 0px;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  padding: 15px 30px;
+  color: black;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+h1{
+  margin: 0px;
+}
